@@ -1,14 +1,9 @@
 :root {
     --dark-navy: #020c1b;
     --navy: #0a0d1f;
-    --sky: #9aa2ca;
-    --light-blue: #c1c8ec;
-    --white: rgb(240, 229, 229);
+    --dark-purple: #050030;
     --contrast-color: #4fe0be;
     --violet: #d19ff5;
-    --btn-background: linear-gradient(var(--sky), var(--contrast-color));
-    scrollbar-color: var(--sky) var(--light-blue) !important;
-    scrollbar-width: thin !important;
 }
 
 html,
@@ -18,6 +13,9 @@ body {
     padding: 0;
     transition: 0.5s;
     line-height: 1.5;
+    color: white;
+    text-align: center;
+    font-size: 1.05rem;
 }
 
 html {
@@ -25,10 +23,8 @@ html {
 }
 
 body {
-    background-color: var(--navy);
+    background-color: var(--dark-purple);
     background-size: contain;
-    color: var(--sky);
-    text-align: center;
 }
 
 /* HEADER */
@@ -52,7 +48,6 @@ header {
 
 header h1 {
     z-index: 1000;
-    color: white;
 }
 
 /* NAVBAR */
@@ -62,16 +57,19 @@ header h1 {
     justify-content: flex-end;
 }
 
-.navbar-container a {
+.nav-link {
     color: var(--dark-navy);
     text-decoration: none;
     padding: 12px 10px 8px;
     font-size: 1.3rem;
     font-weight: bolder;
     margin: 7px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar-container a:hover {
+.nav-link:hover {
     background-color: var(--contrast-color);
     color: var(--dark-navy);
     border-radius: 8px;
@@ -102,6 +100,10 @@ header h1 {
     padding-top: 100px;
 }
 
+h2 {
+    margin-bottom: 45px;
+}
+
 /* HOME */
 
 .emoji {
@@ -112,20 +114,39 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("./images/Stary\ Night\ View.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
+
 #home a {
     text-decoration: none;
     padding: 12px 10px 8px;
-    font-size: 1.3rem;
-    font-weight: bolder;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    border: 1px solid #34054f26;
+    padding: 10px;
+    background: #2d025145;
+    border-radius: 10px;
 }
 
 .intro-text {
     font-size: 1.3rem;
+    width: 90%;
 }
 
-button {
+#home button {
     animation: gradient 5s ease infinite;
     background: linear-gradient(-135deg, rgb(255, 102, 102) 0%, rgb(97, 87, 255) 100%);
     background-size: 400%;
@@ -134,6 +155,11 @@ button {
     border: none;
     margin: 15px;
     padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#home button:hover {
+    transform: scale(1.1);
 }
 
 @keyframes gradient {
@@ -150,33 +176,58 @@ button {
 
 /* ABOUT */
 
-.text-container {
+.about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border: 1px solid #cccccc2b;
     padding: 10px;
-    background: #ffffff0f;
+    background: #ffffff1a;
     border-radius: 10px;
+    max-width: 1200px;
 }
 
-.about-card {
+.about-container p {
+    width: 90%;
+    margin: 10px;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.text-card {
     display: flex;
-    align-items: center;
+    text-align: left;
+    width: 93%;
+}
+
+.bullet-point {
+    width: 20px;
+    height: 20px;
+    margin: 12px 10px 0;
+    align-self: flex-start;
 }
 
 /* PROJECTS */
 
+#projects {
+    width: 93%;
+}
+
 .project-container {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; */
-
+    gap: 20px;
+    /* 
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    gap: 20px;
+    gap: 20px; */
 }
 
 .project-card {
@@ -187,7 +238,7 @@ button {
     padding: 20px;
     border: 1px solid #cccccc2b;
     border-radius: 10px;
-    /* max-width: 450px; */
+    max-width: 350px;
     background: #ffffff0f;
 }
 
@@ -200,6 +251,8 @@ button {
     font-size: 24px;
     text-align: center;
     margin: 20px 0;
+    font-weight: bolder;
+    color: var(--contrast-color);
 }
 
 .project-description {
@@ -220,6 +273,7 @@ button {
     align-items: center;
     font-weight: bold;
     cursor: pointer;
+    border: none;
     padding: 10px 20px 10px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
