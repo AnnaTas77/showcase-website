@@ -70,4 +70,3 @@ projects.forEach((project) => {
 
     projectContainer.appendChild(projectCard);
 });
-
