@@ -3,7 +3,7 @@
     --navy: #0a0d1f;
     --dark-purple: #050030;
     --contrast-color: #4fe0be;
-    --violet: #d19ff5;
+    --violet: #ab99ff;
 }
 
 html,
@@ -50,6 +50,10 @@ header h1 {
     z-index: 1000;
 }
 
+.logo img{
+    width: 80px;
+}
+
 /* NAVBAR */
 
 .navbar-container {
@@ -60,7 +64,7 @@ header h1 {
 .nav-link {
     color: var(--dark-navy);
     text-decoration: none;
-    padding: 12px 10px 8px;
+    padding: 10px;
     font-size: 1.3rem;
     font-weight: bolder;
     margin: 7px;
@@ -102,6 +106,8 @@ header h1 {
 
 h2 {
     margin-bottom: 45px;
+    font-size: 1.7rem;
+    color: var(--contrast-color);
 }
 
 /* HOME */
@@ -224,10 +230,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    /* 
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    gap: 20px; */
 }
 
 .project-card {
@@ -252,7 +254,7 @@ h2 {
     text-align: center;
     margin: 20px 0;
     font-weight: bolder;
-    color: var(--contrast-color);
+    color: var(--violet);
 }
 
 .project-description {
@@ -294,6 +296,73 @@ h2 {
 }
 /* CONTACT */
 
+.form-container {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #cccccc2b;
+    border-radius: 10px;
+    background: #ffffff0f;
+}
+
+.form-container form {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px;
+}
+
+.form-container label {
+    justify-self: end;
+    color: var(--violet);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.submit-btn {
+    grid-column-start: 2;
+    justify-self: end;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px 10px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: auto;
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in-out infinite;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.submit-btn:hover {
+    transform: scale(1.1);
+}
+
+.input-field {
+    width: 95%;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5px 0 45px;
+}
+
+.icon-container i {
+    color: var(--violet);
+    font-size: 2rem;
+    margin: 0 15px 0;
+}
+
+.icon-container i:hover {
+    color: var(--contrast-color);
+    transition: color 0.5s;
+}
 /* FOOTER */
 
 footer {
