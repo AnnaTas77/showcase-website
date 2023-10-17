@@ -95,7 +95,6 @@ header h1 {
 }
 
 #open-menu {
-    color: var(--dark-navy);
     font-size: 2rem;
     transition: transform 0.3s;
 }
@@ -103,7 +102,6 @@ header h1 {
 #close-menu {
     display: none;
     font-size: 2rem;
-    color: var(--dark-navy);
     transition: transform 0.3s;
 }
 
