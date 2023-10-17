@@ -359,6 +359,7 @@ h2 {
     color: white;
     font-size: 1.1rem;
 }
+
 /* CONTACT */
 
 .form-container {
@@ -382,13 +383,30 @@ h2 {
     font-weight: bold;
 }
 
-.submit-btn {
+.form-container input,
+.form-container textarea {
+    border-radius: 5px;
+    border: none;
+    background-color: #efd3ffc9;
+    color: black;
+    font-size: 0.95rem;
+}
+
+.form-container input::placeholder,
+.form-container textarea::placeholder {
+    color: #07010f;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#submit-btn {
     grid-column-start: 2;
     justify-self: end;
-    margin: 10px;
+    margin: 10px 16px 10px;
+    width: 90px;
     cursor: pointer;
     border: none;
-    padding: 10px 20px 10px;
+    padding: 10px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: auto;
     background-size: 400% 400%;
@@ -400,7 +418,7 @@ h2 {
     color: white;
 }
 
-.submit-btn:hover {
+#submit-btn:hover {
     transform: scale(1.1);
 }
 
