@@ -6,7 +6,7 @@
 
 Welcome to my Show-Case Portfolio Website, thoughtfully crafted to support my application to Founders and Coders. It offers a brief overview of my journey, motivations, and project work, showcasing my commitment to becoming a proficient web developer. This site is built entirely from scratch, without relying on external libraries such as Bootstrap, React, or Jekyll themes.
 
-## Technologies Employed
+## Tech Stack
 
 -   **HTML:** HTML forms the structural backbone of this website, shaping its layout and composition.
 -   **CSS:** CSS is wielded to meticulously craft the visual aesthetics, ensuring an engaging user experience.
