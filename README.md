@@ -12,7 +12,7 @@ Welcome to my Show-Case Portfolio Website, thoughtfully crafted to support my ap
 -   **CSS:** CSS is wielded to meticulously craft the visual aesthetics, ensuring an engaging user experience.
 -   **JavaScript:** JavaScript has been utilized to enhance interactivity, providing users with a seamless and dynamic browsing experience.
 
-## Installation
+## Getting Started
 
 If you wish to explore this website locally:
 
