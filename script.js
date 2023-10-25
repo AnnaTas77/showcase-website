@@ -18,13 +18,16 @@ function toggleMenu() {
     const menu = document.querySelector(".menu");
     const openMenu = document.getElementById("open-menu");
     const closeMenu = document.getElementById("close-menu");
+    const main = document.querySelector(".main-container");
 
     if (menu.style.display === "flex") {
         menu.style.display = "none";
         openMenu.style.display = "flex";
         closeMenu.style.display = "none";
+        main.style.filter = "none";
     } else {
         menu.style.display = "flex";
+        main.style.filter = "blur(15px)";
         openMenu.style.display = "none";
         closeMenu.style.display = "flex";
     }
