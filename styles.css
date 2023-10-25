@@ -121,6 +121,7 @@ header h1 {
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 .menu-item {
