@@ -335,21 +335,21 @@ h2 {
     gap: 30px;
 }
 
-.project-links button {
+.project-links a {
     display: flex;
     align-items: center;
     font-weight: bold;
     cursor: pointer;
     border: none;
-    padding: 10px 20px 10px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease-in-out infinite;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    padding: 7px 20px;
 }
 
-.project-links button:hover {
+.project-links a:hover {
     transform: scale(1.1);
 }
 
