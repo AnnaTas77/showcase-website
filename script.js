@@ -33,6 +33,11 @@ function toggleMenu() {
     }
 }
 
+const blurRemove = () => {
+    const main = document.querySelector(".main-container");
+    main.style.filter = "none";
+};
+
 const menuItems = document.querySelectorAll(".menu-item");
 
 menuItems.forEach(function (item) {

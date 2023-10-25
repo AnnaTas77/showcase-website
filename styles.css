@@ -227,6 +227,7 @@ h2 {
     margin: 15px;
     padding: 10px;
     transition: transform 0.3s ease-in-out;
+    width: 122px;
 }
 
 #home button:hover {
