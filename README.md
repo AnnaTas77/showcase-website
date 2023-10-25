@@ -6,6 +6,8 @@
 
 Welcome to my Show-Case Portfolio Website, thoughtfully crafted to support my application to Founders and Coders. It offers a brief overview of my journey, motivations, and project work, showcasing my commitment to becoming a proficient web developer. This site is built entirely from scratch, without relying on external libraries such as Bootstrap, React, or Jekyll themes.
 
+#### Please take a moment to explore my showcase portfolio website [here](https://annatas77.github.io/showcase-website/).
+
 ## Tech Stack
 
 -   **HTML:** HTML forms the structural backbone of this website, shaping its layout and composition.
