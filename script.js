@@ -39,7 +39,7 @@ menuItems.forEach(function (item) {
         const closeMenu = document.getElementById("close-menu");
 
         menu.style.display = "none";
-        openMenu.style.display = "block";
+        openMenu.style.display = "flex";
         closeMenu.style.display = "none";
     });
 });

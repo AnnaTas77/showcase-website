@@ -119,9 +119,12 @@ header h1 {
     z-index: 100;
     padding-top: 30px;
     margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+
+    @supports (backdrop-filter: blur(15px)) {
+        backdrop-filter: blur(15px);
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    background-color: rgb(91, 38, 91);
 }
 
 .menu-item {
