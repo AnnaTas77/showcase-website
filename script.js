@@ -27,7 +27,7 @@ function toggleMenu() {
         main.style.filter = "none";
     } else {
         menu.style.display = "flex";
-        main.style.filter = "blur(15px)";
+        main.style.filter = "blur(20px)";
         openMenu.style.display = "none";
         closeMenu.style.display = "flex";
     }
